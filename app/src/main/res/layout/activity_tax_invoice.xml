@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- PAGE TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TAX INVOICE"
+            android:textColor="#087EA4"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- DOCUMENT DETAILS -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#087EA4"
+            android:padding="10dp"
+            android:text="DOCUMENT DETAILS"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etInvoiceNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Invoice No."
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etInvoiceDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Invoice Date"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etEwayBill"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-Way Bill No. (Optional)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etPoNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PO No. (Optional)"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etPoDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PO Date (Optional)"
+            android:inputType="text" />
+
+        <!-- BILL TO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#087EA4"
+            android:padding="10dp"
+            android:text="BILL TO"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etBillName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer / Company Name" />
+
+        <EditText
+            android:id="@+id/etBillAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <EditText
+            android:id="@+id/etBillGstin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="GSTIN" />
+
+        <EditText
+            android:id="@+id/etBillState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State" />
+
+        <EditText
+            android:id="@+id/etBillStateCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State Code" />
+
+        <EditText
+            android:id="@+id/etBillContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact" />
+
+        <!-- SHIP TO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#087EA4"
+            android:padding="10dp"
+            android:text="SHIP TO"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etShipName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer / Company Name" />
+
+        <EditText
+            android:id="@+id/etShipAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <EditText
+            android:id="@+id/etShipGstin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="GSTIN" />
+
+        <EditText
+            android:id="@+id/etShipState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State" />
+
+        <EditText
+            android:id="@+id/etShipStateCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State Code" />
+
+        <EditText
+            android:id="@+id/etShipContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact" />
+
+        <!-- TRANSPORTATION -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#087EA4"
+            android:padding="10dp"
+            android:text="TRANSPORTATION DETAILS"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etTransportName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transporter Name" />
+
+        <EditText
+            android:id="@+id/etTransportNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transporter No." />
+
+        <EditText
+            android:id="@+id/etVehicleNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle No." />
+
+        <!-- TAX & PAYMENT -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#087EA4"
+            android:padding="10dp"
+            android:text="TAX &amp; PAYMENT"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etTaxRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tax Rate (%) e.g. 18"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spTaxType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/etReceived"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Received Amount (Optional)"
+            android:inputType="numberDecimal" />
+
+        <Spinner
+            android:id="@+id/spPaymentMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" />
+
+        <!-- ITEMS -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#087EA4"
+            android:padding="10dp"
+            android:text="ITEMS"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/itemsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <Button
+            android:id="@+id/btnAddItem"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:text="+ ADD ITEM"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#087EA4"
+            android:padding="10dp"
+            android:text="CALCULATION SUMMARY"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:text="Subtotal: ₹0.00"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discount: ₹0.00"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvTaxable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Taxable Amount: ₹0.00"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvCgst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CGST: ₹0.00"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvSgst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SGST: ₹0.00"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvIgst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IGST: ₹0.00"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvGrandTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="GRAND TOTAL: ₹0.00"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAmountWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Amount in Words: Rupees Zero Only"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <!-- GENERATE BUTTON -->
+
+        <Button
+            android:id="@+id/btnGenerateInvoice"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="GENERATE TAX INVOICE"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
